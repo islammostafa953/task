@@ -1,0 +1,331 @@
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,body
+{
+  width:100%;
+  height:100%;
+  margin: 0;
+  -webkit-background: 100% auto;
+  -moz-background: 100% auto;
+  -o-background: 100% auto;
+
+}
+#open
+{
+width:100px;
+background: #000;
+color: #fff;
+position: fixed;
+margin-left:45%;
+margin-top:20%;
+z-index: 10000000;
+}
+#close
+{
+  width:100px;
+  background: #000;
+  color: #fff;
+  position: fixed;
+   z-index: 10000000; 
+  opacity:0;
+}
+.rdoor
+{
+  width:50%;
+  height:100%;
+  animation: open_door 3s forwards; 
+  position: fixed;
+    right:0px;
+  z-index: 100;
+
+
+}
+.ldoor
+{  width:50%;
+   height:100%;
+  animation: open_door 3s forwards; 
+  position: fixed;
+  left:0px;
+  z-index: 100;
+
+}
+/*
+@keyframes open_door{
+ from {width:50%}
+ to {
+   width:9%;
+ }
+
+}
+*/
+.blacks
+{
+  width: 100%;
+  height:5200px;
+  background-color: black;
+  margin-bottom: 50px;
+  position: relative;
+  overflow: scroll;
+
+}
+#logo
+
+{
+  position: fixed;
+  z-index:100000;
+  margin-left:10%;
+  margin-top:1%;
+
+}
+
+.women
+{
+  width:100%;
+  height:100%;
+  background: url(../img/girls.png)  no-repeat ;
+  background-position: center;
+  background-size:cover;
+  padding-top:50px;
+  
+
+ 
+ 
+ }
+
+
+.men
+{
+  width:100%;
+  height:100%;
+  background: url(../img/boys.png)  no-repeat ;
+  background-position: center;
+  background-size:cover;
+  padding-top:50px;
+}
+.titles
+{
+  text-align: center;
+  color: #213c53;
+  font: open sans;
+  top:50px;
+  text-transform:uppercase;
+}
+
+.no_space
+{
+  padding-right:0;
+    padding-left:0;
+}
+
+.wshirts , .mshirts
+{
+  width:100%;
+  min-height:100%;
+  background: #213c53;
+  float:left;
+}
+
+.wmshirts
+{
+  color: aliceblue;
+  text-align: center;
+  margin-top:3%;
+  text-transform: uppercase;
+}
+
+.women_shirts
+{
+  width:90%;
+  min-height:90%;
+  align-content: center;
+  margin-left:auto;
+  margin-right: auto; 
+ 
+}
+
+.buttonS
+{
+  width:26px;
+  height:26px;
+  border-radius:50%;
+  margin-top:5px;
+  color: aliceblue;
+  background-color: rgba(000,000,000, 0.0 );
+  border: 1px solid #fff;
+  text-align: center;
+}
+
+.buttonS:hover
+{
+  
+  color:black;
+  background-color:#fff;;
+  border: 1px solid #000;
+  
+}
+
+.shirt_black
+{
+  width:100px;
+  height:100px;
+  margin-left:12px;
+  margin-right:12px;
+  margin-top: 10px;
+
+
+  float: left;
+}
+@media only screen and (max-width:465px){
+.div_shirts
+{
+    width:100%;
+    
+    
+    
+    
+}
+}
+.p1
+{
+  color: #fff;
+  text-transform: uppercase;
+  font-size:12px;
+}
+
+
+
+.shopping
+{
+  width:100%;
+  height:100%;
+  background: url(../img/cart-photo-left.png)  no-repeat ;
+  background-size:cover;
+  background-position: center;
+   
+}
+
+.shirts_shopping
+{
+  width:100%;
+  height:100%;
+  background: url(../img/cart-photo-right.png)  no-repeat ;
+  background-size:cover;
+  
+}
+
+.tshirts
+{
+ width:150px;
+ height: 500px;
+  
+ padding-left:10%;
+ padding-top: 5%;
+ float: left;
+}
+
+#add1,#dec1,#add2,#dec2,#add3,#dec3
+{
+  width:25px;
+  height:25px;
+  border:1px solid #000;
+  border-radius:20%;
+  text-align: center;float: left;
+  margin-top:10px;
+}
+
+#counter1,#counter2,#counter3
+{
+  min-width:40px;
+  height:25px;
+  float: left;
+   margin-left: 5px;
+  margin-right: 5px;
+  border:1px solid #000;
+  border-radius:20%;
+  text-align: center;
+  margin-top:10px;
+
+
+}
+
+.ulmedia
+{
+  margin-top:40px;
+  margin-left:30px;
+  list-style-type:none;
+  float: left;
+  font-style: open sans;
+  text-transform: uppercase;
+  font-weight: 600;
+  display:block;
+}
+@media only screen and (max-width: 1000px) {
+  .signup
+{
+  border-bottom: 2px solid #213c53;
+}
+.buttonreg
+{
+  margin-bottom:50px;
+
+}
+}
+@media only screen and (max-width: 600px) {
+   .ulmedia
+   {
+    font-size:10px;
+    margin-top:50px;
+    margin-right:20px; /* becuse last ul change place*/
+
+   }
+   #counter1,#counter2,#counter3
+{
+  min-width:30px;
+  height:20px;
+}
+#add1,#dec1,#add2,#dec2,#add3,#dec3
+{
+  width:20px;
+  height:20px;
+
+}
+
+
+}
+
+/* fourth container sign in / up*/
+
+.signup
+{
+  width:100%;
+  height:100%;
+  background:#f4f4f4  no-repeat ;
+  background-position: center;
+  background-size:cover;
+  padding-top:10px;
+  
+}
+
+.form-group
+{
+  border-bottom: 2px solid #213c53;
+ 
+
+}
+
+
+/* sign in */
+.singin
+{
+  width:100%;
+  height:100%;
+  background:#f4f4f4  no-repeat ;
+  background-position: center;
+  background-size:cover;
+  padding-top:10px;
+  
+}
